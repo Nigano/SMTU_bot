@@ -7,7 +7,7 @@ from all_buttons import *
 import mysql.connector
 
 BOT_TOKEN = input("Gimme token: ")
-bot = Bot(token=f'{BOT_TOKEN[0]}')
+bot = Bot(token=BOT_TOKEN)
 dp = aiogram.Dispatcher()
 
 connection = mysql.connector.connect(
