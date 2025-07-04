@@ -1,7 +1,7 @@
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 import mysql.connector
 
-passwd = input("Gimme your mysql db passwd")
+passwd = input("Gimme your mysql db passwd: ")
 connection = mysql.connector.connect(host='127.0.0.1', user='root', password=f'{passwd}',
                                      database='base_for_keeper_bot')
 cursor = connection.cursor()

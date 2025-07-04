@@ -4,19 +4,11 @@ import aiogram
 from aiogram import Bot, types
 from aiogram.filters import CommandStart
 from all_buttons import *
-import mysql.connector
+
 
 BOT_TOKEN = input("Gimme token: ")
 bot = Bot(token=BOT_TOKEN)
 dp = aiogram.Dispatcher()
-
-connection = mysql.connector.connect(
-    host='127.0.0.1',
-    user='root',
-    password='Saf21Sls17Ssa07',
-    database='base_for_keeper_bot'
-)
-cursor = connection.cursor()
 
 
 # mm = main menu buttons
