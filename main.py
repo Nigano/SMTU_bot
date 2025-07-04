@@ -6,7 +6,7 @@ from aiogram.filters import CommandStart
 from all_buttons import *
 import mysql.connector
 
-BOT_TOKEN = open("not_a_token.txt").read().split()
+BOT_TOKEN = input("Gimme token: ")
 bot = Bot(token=f'{BOT_TOKEN[0]}')
 dp = aiogram.Dispatcher()
 
